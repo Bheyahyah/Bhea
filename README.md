@@ -24,7 +24,7 @@ void create_directory() {
     if (_mkdir(di_name.c_str()) == 0) {
         cout << "Directory created successfully: " << dir_name << endl;
     } else {
-        cout << "Error creating directory: " << dir_name << endl;
+        cout << "Error creating directory: " << di_name << endl;
     }
 }
 
