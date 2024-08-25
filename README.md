@@ -6,22 +6,22 @@
 using namespace std;
 
 void list_files() {
-    system("dir");
+    system("di");
 }
 
 void list_files_extension(string ext) {
-    system("dir *.");
+    system("di *.");
 }
 
 void list_files_pattern(string pattern) {
-    system("dir " + pattern);
+    system("dir" + pattern);
 }
 
 void create_directory() {
-    string dir_name;
+    string di_name;
     cout << "Enter directory name: ";
-    getline(cin, dir_name);
-    if (_mkdir(dir_name.c_str()) == 0) {
+    getline(cin, di_name);
+    if (_mkdir(di_name.c_str()) == 0) {
         cout << "Directory created successfully: " << dir_name << endl;
     } else {
         cout << "Error creating directory: " << dir_name << endl;
