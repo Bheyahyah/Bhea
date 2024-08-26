@@ -6,11 +6,11 @@
 using namespace std;
 
 void list_files() {
-    system("dir);
+    system("mng");
 }
 
 void list_files_extension(string ext) {
-    system("dir *.");
+    system("mng *.");
 }
 
 void list_files_pattern(string pattern) {
@@ -20,11 +20,11 @@ void list_files_pattern(string pattern) {
 void create_directory() {
     string dir_name;
     cout << "Enter directory name: ";
-    getline(cin, dir_name);
+    getline(cin, mngmnt_name);
     if (_mkdir(dir_name.c_str()) == 0) {
-        cout << "Directory created successfully: " << dir_name << endl;
+        cout << "Directory created successfully: " << mngmnt_name << endl;
     } else {
-        cout << "Error creating directory: " << dir_name << endl;
+        cout << "Error creating directory: " << mngmnt_name << endl;
     }
 }
 
@@ -105,4 +105,5 @@ void main_menu() {
 int main() {
     main_menu return 0;
 }
+
 
