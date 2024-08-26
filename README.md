@@ -14,7 +14,7 @@ void list_files_extension(string ext) {
 }
 
 void list_files_pattern(string pattern) {
-    system("dir" + pattern);
+    system("mng" + pattern);
 }
 
 void create_directory() {
