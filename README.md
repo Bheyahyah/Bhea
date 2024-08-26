@@ -6,7 +6,7 @@
 using namespace std;
 
 void list_files() {
-    system("mng");
+    system("dir");
 }
 
 void list_files_extension(string ext) {
